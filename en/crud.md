@@ -113,7 +113,7 @@ class MenusController extends AppController
         if (Input::hasPost('menus')) {
 
             if ($menu->update(Input::post('menus'))) {
-                 Flash::valid(Success');
+                 Flash::valid('Success');
                 //redirect por default to the index of controller
                 return Redirect::to();
             }
